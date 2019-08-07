@@ -1,0 +1,528 @@
+$color:(primary:#464de4,
+    secondary:#636363,
+    background:#eff3f5,
+    border:#d5dcec,
+    table:#f3f5f6,
+    button:#464de4,
+    tic-name:#223C61,
+    wht-btn:#fff,
+);
+
+@mixin for-size($size) {
+    @if $size==phone-only {
+        @media (max-width: 599px) {
+            @content;
+        }
+    }
+
+    @else if $size==tablet-portrait-up {
+        @media (min-width: 600px) {
+            @content;
+        }
+    }
+
+    @else if $size==tablet-landscape-up {
+        @media (min-width: 900px) {
+            @content;
+        }
+    }
+
+    @else if $size==desktop-up {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $size==big-desktop-up {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+}
+
+.container-scroller {
+    background: map-get($map:$color, $key:background);
+    overflow: hidden !important;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page {
+    min-height: calc(100vh-70px);
+    padding-left: 0;
+    padding-right: 0;
+    background: map-get($map:$color, $key:background);
+}
+
+.mainContent {
+    min-height: calc(100vh-90px);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include for-size(phone-only) {
+        padding-right: 12.5px;
+        padding-left: 12.5px;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        padding-right: 20.5px;
+        padding-left: 20.5px;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        padding-right: 25.5px;
+        padding-left: 25.5px;
+    }
+
+    @include for-size(desktop-up) {
+        padding-right: 12.5px;
+        padding-left: 12.5px;
+    }
+
+    @include for-size(big-desktop-up) {
+        padding-right: 20.5px;
+        padding-left: 20.5px;
+    }
+}
+
+.firstBox {
+
+    .col-12 {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+
+    .card {
+        margin-top: 20px;
+        border-radius: 0px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 12.5px;
+        margin-left: 12.5px;
+    }
+
+    .grid-margin {
+        margin-bottom: 25px;
+    }
+
+    .card-col {
+        border-right: 1px solid map-get($map: $color, $key:border)
+    }
+
+    .card-col1 {
+        border-right: 1px solid map-get($map: $color, $key:border);
+
+        @media (max-width: 767px) {
+            border-right: transparent
+        }
+    }
+
+    .bord {
+        @media (max-width: 767px) {
+            border-top: 1px solid map-get($map: $color, $key:border);
+        }
+    }
+
+    .card-body {
+        padding: 35px 25px;
+
+        @media (max-width: 991px) {
+            padding: 25px 10px;
+        }
+    }
+
+    .img {
+        margin-right: 0.75rem;
+        font-size: 2.5rem;
+        color: map-get($map: $color, $key:primary);
+
+        @media (max-width: 991px) {
+            margin-right: 0.5rem !important;
+        }
+    }
+
+    .card-text {
+        @include for-size(phone-only) {
+            white-space: nowrap;
+            font-size: 15px;
+        }
+    }
+
+    .flex-sm-row {
+        @include for-size(phone-only) {
+            flex-direction: column;
+        }
+    }
+
+    .user {
+        align-items: left;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+.secondBox {
+
+    .stretch-card {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: stretch;
+        align-items: stretch;
+        -webkit-justify-content: stretch;
+        justify-content: stretch;
+    }
+
+    .grid-margin {
+        margin-bottom: 25px;
+    }
+
+    .profile {
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+        object-fit: cover;
+    }
+
+    .text {
+        color: map-get($map: $color, $key: secondary)
+    }
+
+    .card {
+        border: map-get($map: $color, $key:border);
+        margin-top: 20px;
+        width: 100%;
+        min-width: 100%;
+        border-radius: 0px;
+    }
+
+    .second {
+        .card-body {
+            padding: 0rem
+        }
+
+        .padd {
+            padding: 1.25rem
+        }
+    }
+
+    .card-body {
+        padding: 35px 25px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 0.8rem !important;
+    }
+
+    h4 {
+        font-size: 1.13rem !important;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 0.9375rem !important;
+    }
+
+    h5 {
+        font-size: 1rem !important;
+    }
+
+    h1 {
+        font-size: 2.19rem !important;
+    }
+
+    .map-space {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        // padding-top: 2rem
+    }
+
+    .align {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem
+    }
+
+    .btn-primary {
+        background-color: map-get($map: $color, $key:button) !important;
+        border-color: map-get($map: $color, $key:button) !important;
+    }
+}
+
+.thirdBox {
+
+    .grid-margin {
+        margin-bottom: 25px;
+    }
+
+    .table {
+        border-collapse: collapse;
+    }
+
+    .tab-head {
+        background-color: map-get($map: $color, $key:table)
+    }
+
+    .table th,
+    .table td {
+        vertical-align: middle;
+        font-size: 0.9rem;
+        line-height: 1;
+        padding: 23px 30px;
+    }
+
+    td {
+        white-space: nowrap !important;
+        vertical-align: top;
+        border-top: 1px solid #d5dcec;
+    }
+
+    table thead th {
+        border-top: 0;
+        vertical-align: bottom;
+        white-space: nowrap !important;
+    }
+}
+
+.fourthBox {
+
+    .grid-margin {
+        margin-bottom: 25px;
+        display: grid;
+    }
+
+    .card-body {
+        padding: 35px 25px
+    }
+
+    p {
+        font-weight: 400 !important;
+        font-size: 0.8rem !important;
+        color: map-get($map: $color, $key:secondary) !important
+    }
+
+    .status {
+        display: flex !important;
+        align-items: flex-end !important
+    }
+
+    .status1 {
+        font-weight: 600;
+        font-size: 3.125rem;
+    }
+
+    .bullet {
+        padding-left: 29px;
+        position: relative;
+        list-style-type: none;
+    }
+
+    .bullet-line-list li {
+        position: relative;
+    }
+
+    .bullet-line-list li::before {
+        content: "";
+        position: absolute;
+        border-radius: 100%;
+    }
+
+    .bullet-line-list li::before {
+        width: 15px;
+        height: 15px;
+        left: -36px;
+        top: 15px;
+        border: 4px solid map-get($map: $color, $key:primary);
+        margin-right: 15px;
+        z-index: 2;
+        background: map-get($map: $color, $key: wht-btn);
+    }
+
+    .bullet-line-list li::after {
+        content: "";
+        position: absolute;
+        border: 1px solid map-get($map: $color, $key:border);
+        height: 80px;
+        top: 15px;
+        left: -30px;
+
+        @media (max-width:1000px) {
+            height: 98px;
+        }
+    }
+
+    .li {
+        line-height: 1.8px !important;
+    }
+
+    h6 {
+        font-size: 0.9375rem !important;
+    }
+
+    p {
+        font-weight: 400 !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+.fifthBox {
+
+    .profile2 {
+        height: 43px;
+        width: 43px;
+        margin-bottom: 0;
+        border-radius: 50%;
+    }
+
+    .col-9 {
+        max-width: 100% !important;
+    }
+
+    .ticket-name {
+        font-weight: 700 !important;
+        white-space: nowrap;
+        color: map-get($map: $color, $key:tic-name);
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    @media (max-width:767) {
+        .tab {
+            margin-top: 40px
+        }
+    }
+
+
+    .ticket-id {
+        font-weight: 500;
+        margin-right: 0.25rem;
+        margin-bottom: 0
+    }
+
+    .ticket-detail {
+        font-weight: 500 !important;
+        margin-bottom: 0
+    }
+
+    .text-body {
+        color: map-get($map: $color, $key:secondary) !important;
+        font: size 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-bottom {
+        color: map-get($map: $color, $key:secondary);
+        display: flex
+    }
+
+    .btn-primary {
+        background-color: map-get($map: $color, $key:button) !important;
+        border-color: map-get($map: $color, $key:button) !important;
+    }
+
+    @media (max-width:767px) {
+        .row {
+            flex-direction: column
+        }
+
+        .marginn{
+            margin-top: 30px
+        }
+    }
+
+    .styles {
+        position: absolute;
+        transform: translate3d(0px, -146px, 0px);
+        top: 0px;
+        left: 0px;
+        will-change: transform;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+    .dropdown-menu[x-placement^="top"],
+    .dropdown-menu[x-placement^="right"],
+    .dropdown-menu[x-placement^="left"],
+    .dropdown-menu[x-placement^="bottom"] {
+        right: auto;
+        bottom: auto;
+    }
+
+    .dropdown-menu {
+        font-size: 0.8rem;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        margin: 0.125rem 0 0;
+        font-size: 1rem;
+        color: map-get($map: $color, $key:tic-name);
+        text-align: left;
+        list-style: none;
+        background-color: map-get($map: $color, $key:wht-btn);
+        background-clip: padding-box;
+        border: 1px solid map-get($map: $color, $key:border);
+        border-radius: 0.25rem;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: map-get($map: $color, $key:tic-name);
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .dropdown-divider {
+        height: 0;
+        margin: 0.5rem 0;
+        overflow: hidden;
+        border-top: 1px solid map-get($map: $color, $key:border);
+    }
+
+    @media (max-width:767px) {
+        .dis {
+            display: none
+        }
+
+        .ellipsis {
+            white-space: nowrap;
+            width: 287px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
