@@ -1,325 +1,324 @@
-
 <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
-        <div class="container fixed-top d-flex flex-row">
-            <div class="text-center navbar-brand-wrapper d-flex">
-                <a class="navbar-brand brand-logo">
-                    <img class="logo" src="assets/libertyfull.png">
-                </a>
-                <a class="navbar-brand brand-logo-mini">
-                    <img class="logo" src="assets/liberty.png">
-                </a>
-            </div>
-            <div class="navbar-menu-wrapper d-flex align-items-center">
-    
-                <form class="search-field ml-auto" action="#">
-                    <div class="form-group mb-0">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class='fas fa-search'></i>
-                                </span>
-                            </div>
-                            <input type="text" class="form-control">
+    <div class="container d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex">
+            <a class="navbar-brand brand-logo">
+                <img class="logo" src="assets/libertyfull.png">
+            </a>
+            <a class="navbar-brand brand-logo-mini">
+                <img class="logo" src="assets/liberty.png">
+            </a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+
+            <form class="search-field ml-auto" action="#">
+                <div class="form-group mb-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class='fas fa-search'></i>
+                            </span>
                         </div>
+                        <input type="text" class="form-control">
                     </div>
-                </form>
-    
-                <ul class="navbar-nav navbar-expand-md navbar-nav-right  mr-0">
-                    <li class="nav-item dropdown ml-4">
-                        <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="material-icons">notifications_none</i>
-                            <span class="count">4</span>
+                </div>
+            </form>
+
+            <ul class="navbar-nav navbar-expand-md navbar-nav-right  mr-0">
+                <li class="nav-item dropdown ml-4">
+                    <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="material-icons">notifications_none</i>
+                        <span class="count">4</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list drop"
+                        aria-labelledby="notificationDropdown">
+                        <a class="dropdown-item py-3">
+                            <p class="mb-0 float-left">You have 4 new notifications</p>
+                            <span class="badge badge-pill badge-inverse-info float-right">View all</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list drop"
-                            aria-labelledby="notificationDropdown">
-                            <a class="dropdown-item py-3">
-                                <p class="mb-0 float-left">You have 4 new notifications</p>
-                                <span class="badge badge-pill badge-inverse-info float-right">View all</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item">
-                                <div class="thumbnail green">
-                                    <i class="material-icons">error_outline</i>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">
+                            <div class="thumbnail green">
+                                <i class="material-icons">error_outline</i>
+                            </div>
+                            <div class="preview-item-content">
+                                <h6 class="mb-1">Application Error</h6>
+                                <p class="small-text mb-0">Just now</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">
+                            <div class="thumbnail orange">
+                                <i class='far fa-comment-alt'></i>
+                            </div>
+                            <div class="preview-item-content">
+                                <h6 class="mb-1">Settings</h6>
+                                <p class="small-text mb-0">Private message</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">
+                            <div class="thumbnail purpule">
+                                <i class='far fa-envelope'></i>
+                            </div>
+                            <div class="preview-item-content">
+                                <h6 class="mb-1">New user registration</h6>
+                                <p class="small-text mb-0">2 days ago</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                        <img class="profilenav" src="../assets/face2.jpg">
+                        <i class='fas fa-angle-down arrowstyle'></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-right navbar-dropdown" aria-labelledby="UserDropdown">
+                        <a class="dropdown-item p-0">
+                            <div class="d-flex border-bottom w-100">
+                                <div class="py-3 px-4 d-flex align-items-center justify-content-center flex-grow-1">
+                                    <i class='far fa-bookmark mr-0 text-gray'></i>
                                 </div>
-                                <div class="preview-item-content">
-                                    <h6 class="mb-1">Application Error</h6>
-                                    <p class="small-text mb-0">Just now</p>
+                                <div
+                                    class="py-3 px-4 d-flex align-items-center border-left border-right justify-content-center flex-grow-1">
+                                    <i class="material-icons">perm_identity</i>
                                 </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item">
-                                <div class="thumbnail orange">
-                                    <i class='far fa-comment-alt'></i>
+                                <div class="py-3 px-4 d-flex align-items-center justify-content-center flex-grow-1">
+                                    <i class="material-icons">alarm_on</i>
                                 </div>
-                                <div class="preview-item-content">
-                                    <h6 class="mb-1">Settings</h6>
-                                    <p class="small-text mb-0">Private message</p>
-                                </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item">
-                                <div class="thumbnail purpule">
-                                    <i class='far fa-envelope'></i>
-                                </div>
-                                <div class="preview-item-content">
-                                    <h6 class="mb-1">New user registration</h6>
-                                    <p class="small-text mb-0">2 days ago</p>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item mt-2">Manage Account</a>
+                        <a class="dropdown-item mt-2">Change Password</a>
+                        <a class="dropdown-item mt-2">Check Inbox</a>
+                        <a class="dropdown-item mt-2">Sign Out</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span style="color: black" class='fas fa-bars'></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="nav-bottom  ">
+        <div class="container">
+            <div class=" nav-bottom1 collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav page-navigation row">
+                    <li class="nav-item">
+                        <a href="dashboard" class="nav-link-D nav-link start">
+                            <i class="link-icon fa fa-tv"></i>
+                            <span class="menu-title str">DASHBOARD</span>
+                        </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                            <img class="profilenav" src="../assets/face2.jpg">
-                            <i class='fas fa-angle-down arrowstyle'></i>
+                    <li class="nav-item">
+                        <a href="dashboard" class="nav-link style start">
+                            <i class='linkicon far fa-compass'></i>
+                            <span class="menutitle str">WIDGETS</span>
                         </a>
-                        <div class="dropdown-menu dropdown-right navbar-dropdown" aria-labelledby="UserDropdown">
-                            <a class="dropdown-item p-0">
-                                <div class="d-flex border-bottom w-100">
-                                    <div class="py-3 px-4 d-flex align-items-center justify-content-center flex-grow-1">
-                                        <i class='far fa-bookmark mr-0 text-gray'></i>
-                                    </div>
-                                    <div
-                                        class="py-3 px-4 d-flex align-items-center border-left border-right justify-content-center flex-grow-1">
-                                        <i class="material-icons">perm_identity</i>
-                                    </div>
-                                    <div class="py-3 px-4 d-flex align-items-center justify-content-center flex-grow-1">
-                                        <i class="material-icons">alarm_on</i>
+                    </li>
+                    <li class="nav-item mega-menu">
+                        <a class="nav-link d-flex">
+                            <i class='link-icon1 rt fab fa-react'></i>
+
+                            <div class="container">
+                                <div class="dropdown text-center">
+                                    <button class="btn dropdown-toggle start1 menu lf " type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        UI ELEMENTS
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="display-menu dflex">
+                                            <div class="col-4">
+                                                <div class=" heading border-bottom">Basic Elements</div>
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <a class="dropdown-item" href="#">Accordian</a>
+                                                        <a class="dropdown-item" href="#">Buttons</a>
+                                                        <a class="dropdown-item" href="#">Badges</a>
+                                                        <a class="dropdown-item" href="#">Breadcrumbs</a>
+                                                        <a class="dropdown-item" href="#">Dropdowm</a>
+                                                        <a class="dropdown-item" href="#">Modals</a>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a class="dropdown-item" href="#">Progress bar</a>
+                                                        <a class="dropdown-item" href="#">Pagination</a>
+                                                        <a class="dropdown-item" href="#">Tabs</a>
+                                                        <a class="dropdown-item" href="#">Typography</a>
+                                                        <a class="dropdown-item" href="#">Tooltip</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class=" heading border-bottom">Advanced Elements</div>
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <a class="dropdown-item" href="#">Dragula</a>
+                                                        <a class="dropdown-item" href="#">Carousel</a>
+                                                        <a class="dropdown-item" href="#">Clipboard</a>
+                                                        <a class="dropdown-item" href="#">Contex Menu</a>
+                                                        <a class="dropdown-item" href="#">Loader</a>
+                                                        <a class="dropdown-item" href="#">Slider</a>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a class="dropdown-item" href="#">Progress bar</a>
+                                                        <a class="dropdown-item" href="#">Tour</a>
+                                                        <a class="dropdown-item" href="#">Popup</a>
+                                                        <a class="dropdown-item" href="#">Notification</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class=" heading border-bottom">Table</div>
+                                                <a class="dropdown-item" href="#">Basic Table</a>
+                                                <a class="dropdown-item" href="#">Data Table</a>
+                                                <a class="dropdown-item" href="#">Js-grid</a>
+                                                <a class="dropdown-item" href="#">Sortable Table</a>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class=" heading border-bottom">Icon</div>
+                                                <a class="dropdown-item" href="#">Flag Icons</a>
+                                                <a class="dropdown-item" href="#">Font Awesome</a>
+                                                <a class="dropdown-item" href="#">Simple Line Icons</a>
+                                                <a class="dropdown-item" href="#">Themify Icons</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                            <a class="dropdown-item mt-2">Manage Account</a>
-                            <a class="dropdown-item mt-2">Change Password</a>
-                            <a class="dropdown-item mt-2">Check Inbox</a>
-                            <a class="dropdown-item mt-2">Sign Out</a>
-                        </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mega-menu">
+                        <a class="nav-link d-flex">
+                            <i class='link-icon1 far fa-flag'></i>
+
+                            <div class="container">
+                                <div class="dropdown text-center col-12">
+                                    <button class="btn dropdown-toggle start2 menu " type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        PAGES
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="display-menu dflex">
+                                            <div class="col-3">
+                                                <div class="heading border-bottom">User Pages</div>
+                                                <a class="dropdown-item" href="#">Login</a>
+                                                <a class="dropdown-item" href="#">Login 2</a>
+                                                <a class="dropdown-item" href="#">Register</a>
+                                                <a class="dropdown-item" href="#">Register 2</a>
+                                                <a class="dropdown-item" href="#">Lockscreen</a>
+                                                <a class="dropdown-item" href="#">Landing screen</a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="heading border-bottom">Error Pages</div>
+                                                <a class="dropdown-item" href="#">400</a>
+                                                <a class="dropdown-item" href="#">404</a>
+                                                <a class="dropdown-item" href="#">500</a>
+                                                <a class="dropdown-item" href="#">505</a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="heading border-bottom">E-commerce</div>
+                                                <a class="dropdown-item" href="#">Invoice</a>
+                                                <a class="dropdown-item" href="#">Pricing Table</a>
+                                                <a class="dropdown-item" href="#">Orders</a>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="heading border-bottom">Layout</div>
+                                                <a class="dropdown-item" href="#">RTL Layout</a>
+                                                <div>
+                                                    <div class="heading border-bottom">Documentation</div>
+                                                    <a class="dropdown-item" href="#">Documentation</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mega-menu">
+                        <a class="nav-link d-flex">
+                            <i class='link-icon1 fas fa-drafting-compass'></i>
+
+                            <div class="container">
+                                <div class="dropdown text-center col-12">
+                                    <button class="btn dropdown-toggle start2 menu " type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        FORMS
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="display-menu dflex">
+                                            <div class="col-4">
+                                                <div class="heading border-bottom">Basic Elements</div>
+                                                <a class="dropdown-item" href="#">Basic Elements</a>
+                                                <a class="dropdown-item" href="#">Advanced Elements</a>
+                                                <a class="dropdown-item" href="#">Validation</a>
+                                                <a class="dropdown-item" href="#">Wizard</a>
+                                                <a class="dropdown-item" href="#">Text Editor</a>
+                                                <a class="dropdown-item" href="#">Code Editor</a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="heading border-bottom">Charts</div>
+                                                <a class="dropdown-item" href="#">Chart Js</a>
+                                                <a class="dropdown-item" href="#">Morris</a>
+                                                <a class="dropdown-item" href="#">Flaot</a>
+                                                <a class="dropdown-item" href="#">Google Chart</a>
+                                                <a class="dropdown-item" href="#">Sparkline</a>
+                                                <a class="dropdown-item" href="#">C3 Chart</a>
+                                                <a class="dropdown-item" href="#">Chartist</a>
+                                                <a class="dropdown-item" href="#">JustGage</a>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="heading border-bottom">Maps</div>
+                                                <a class="dropdown-item" href="#">Mapeal</a>
+                                                <a class="dropdown-item" href="#">Vector Map</a>
+                                                <a class="dropdown-item" href="#">Google Map</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item mega-menu">
+                        <a class="nav-link d-flex">
+                            <i class='link-icon1 fas fa-asterisk'></i>
+                            <div class="container app">
+                                <div class="dropdown text-center col-12">
+                                    <button class="btn dropdown-toggle start2 menu " type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        APPS
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <div class="display-menu">
+                                            <div class="col-4">
+                                                <a class="dropdown-item" href="#">Email</a>
+                                                <a class="dropdown-item" href="#">Calendar</a>
+                                                <a class="dropdown-item" href="#">Advanced Elements</a>
+                                                <a class="dropdown-item" href="#">Todo List</a>
+                                                <a class="dropdown-item" href="#">Gallery</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span style="color: black" class='fas fa-bars'></span>
-                </button>
             </div>
         </div>
-    
-        <div class="nav-bottom  ">
-            <div class="container">
-                <div class=" nav-bottom1 collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="nav page-navigation row">
-                        <li class="nav-item">
-                            <a href="dashboard" class="nav-link-D nav-link start">
-                                <i class="link-icon fa fa-tv"></i>
-                                <span class="menu-title str">DASHBOARD</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="dashboard" class="nav-link style start">
-                                <i class='linkicon far fa-compass'></i>
-                                <span class="menutitle str">WIDGETS</span>
-                            </a>
-                        </li>
-                        <li class="nav-item mega-menu">
-                            <a class="nav-link d-flex">
-                                <i class='link-icon1 rt fab fa-react'></i>
-    
-                                <div class="container">
-                                    <div class="dropdown text-center">
-                                        <button class="btn dropdown-toggle start1 menu lf " type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            UI ELEMENTS
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <div class="display-menu dflex">
-                                                <div class="col-4">
-                                                    <div class=" heading border-bottom">Basic Elements</div>
-                                                    <div class="row">
-                                                        <div class="col-2">
-                                                            <a class="dropdown-item" href="#">Accordian</a>
-                                                            <a class="dropdown-item" href="#">Buttons</a>
-                                                            <a class="dropdown-item" href="#">Badges</a>
-                                                            <a class="dropdown-item" href="#">Breadcrumbs</a>
-                                                            <a class="dropdown-item" href="#">Dropdowm</a>
-                                                            <a class="dropdown-item" href="#">Modals</a>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <a class="dropdown-item" href="#">Progress bar</a>
-                                                            <a class="dropdown-item" href="#">Pagination</a>
-                                                            <a class="dropdown-item" href="#">Tabs</a>
-                                                            <a class="dropdown-item" href="#">Typography</a>
-                                                            <a class="dropdown-item" href="#">Tooltip</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class=" heading border-bottom">Advanced Elements</div>
-                                                    <div class="row">
-                                                        <div class="col-2">
-                                                            <a class="dropdown-item" href="#">Dragula</a>
-                                                            <a class="dropdown-item" href="#">Carousel</a>
-                                                            <a class="dropdown-item" href="#">Clipboard</a>
-                                                            <a class="dropdown-item" href="#">Contex Menu</a>
-                                                            <a class="dropdown-item" href="#">Loader</a>
-                                                            <a class="dropdown-item" href="#">Slider</a>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <a class="dropdown-item" href="#">Progress bar</a>
-                                                            <a class="dropdown-item" href="#">Tour</a>
-                                                            <a class="dropdown-item" href="#">Popup</a>
-                                                            <a class="dropdown-item" href="#">Notification</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-2">
-                                                    <div class=" heading border-bottom">Table</div>
-                                                    <a class="dropdown-item" href="#">Basic Table</a>
-                                                    <a class="dropdown-item" href="#">Data Table</a>
-                                                    <a class="dropdown-item" href="#">Js-grid</a>
-                                                    <a class="dropdown-item" href="#">Sortable Table</a>
-                                                </div>
-                                                <div class="col-2">
-                                                    <div class=" heading border-bottom">Icon</div>
-                                                    <a class="dropdown-item" href="#">Flag Icons</a>
-                                                    <a class="dropdown-item" href="#">Font Awesome</a>
-                                                    <a class="dropdown-item" href="#">Simple Line Icons</a>
-                                                    <a class="dropdown-item" href="#">Themify Icons</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item mega-menu">
-                            <a class="nav-link d-flex">
-                                <i class='link-icon1 far fa-flag'></i>
-    
-                                <div class="container">
-                                    <div class="dropdown text-center col-12">
-                                        <button class="btn dropdown-toggle start2 menu " type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            PAGES
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <div class="display-menu dflex">
-                                                <div class="col-3">
-                                                    <div class="heading border-bottom">User Pages</div>
-                                                    <a class="dropdown-item" href="#">Login</a>
-                                                    <a class="dropdown-item" href="#">Login 2</a>
-                                                    <a class="dropdown-item" href="#">Register</a>
-                                                    <a class="dropdown-item" href="#">Register 2</a>
-                                                    <a class="dropdown-item" href="#">Lockscreen</a>
-                                                    <a class="dropdown-item" href="#">Landing screen</a>
-                                                </div>
-    
-                                                <div class="col-3">
-                                                    <div class="heading border-bottom">Error Pages</div>
-                                                    <a class="dropdown-item" href="#">400</a>
-                                                    <a class="dropdown-item" href="#">404</a>
-                                                    <a class="dropdown-item" href="#">500</a>
-                                                    <a class="dropdown-item" href="#">505</a>
-                                                </div>
-    
-                                                <div class="col-3">
-                                                    <div class="heading border-bottom">E-commerce</div>
-                                                    <a class="dropdown-item" href="#">Invoice</a>
-                                                    <a class="dropdown-item" href="#">Pricing Table</a>
-                                                    <a class="dropdown-item" href="#">Orders</a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="heading border-bottom">Layout</div>
-                                                    <a class="dropdown-item" href="#">RTL Layout</a>
-                                                    <div>
-                                                        <div class="heading border-bottom">Documentation</div>
-                                                        <a class="dropdown-item" href="#">Documentation</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item mega-menu">
-                            <a class="nav-link d-flex">
-                                <i class='link-icon1 fas fa-drafting-compass'></i>
-    
-                                <div class="container">
-                                    <div class="dropdown text-center col-12">
-                                        <button class="btn dropdown-toggle start2 menu " type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            FORMS
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <div class="display-menu dflex">
-                                                <div class="col-4">
-                                                    <div class="heading border-bottom">Basic Elements</div>
-                                                    <a class="dropdown-item" href="#">Basic Elements</a>
-                                                    <a class="dropdown-item" href="#">Advanced Elements</a>
-                                                    <a class="dropdown-item" href="#">Validation</a>
-                                                    <a class="dropdown-item" href="#">Wizard</a>
-                                                    <a class="dropdown-item" href="#">Text Editor</a>
-                                                    <a class="dropdown-item" href="#">Code Editor</a>
-                                                </div>
-    
-                                                <div class="col-3">
-                                                    <div class="heading border-bottom">Charts</div>
-                                                    <a class="dropdown-item" href="#">Chart Js</a>
-                                                    <a class="dropdown-item" href="#">Morris</a>
-                                                    <a class="dropdown-item" href="#">Flaot</a>
-                                                    <a class="dropdown-item" href="#">Google Chart</a>
-                                                    <a class="dropdown-item" href="#">Sparkline</a>
-                                                    <a class="dropdown-item" href="#">C3 Chart</a>
-                                                    <a class="dropdown-item" href="#">Chartist</a>
-                                                    <a class="dropdown-item" href="#">JustGage</a>
-                                                </div>
-    
-                                                <div class="col-4">
-                                                    <div class="heading border-bottom">Maps</div>
-                                                    <a class="dropdown-item" href="#">Mapeal</a>
-                                                    <a class="dropdown-item" href="#">Vector Map</a>
-                                                    <a class="dropdown-item" href="#">Google Map</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-    
-                        <li class="nav-item mega-menu">
-                            <a class="nav-link d-flex">
-                                <i class='link-icon1 fas fa-asterisk'></i>
-                                <div class="container app">
-                                    <div class="dropdown text-center col-12">
-                                        <button class="btn dropdown-toggle start2 menu " type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            APPS
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <div class="display-menu">
-                                                <div class="col-4">
-                                                    <a class="dropdown-item" href="#">Email</a>
-                                                    <a class="dropdown-item" href="#">Calendar</a>
-                                                    <a class="dropdown-item" href="#">Advanced Elements</a>
-                                                    <a class="dropdown-item" href="#">Todo List</a>
-                                                    <a class="dropdown-item" href="#">Gallery</a>
-                                                </div>
-    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    
-    </nav>
+    </div>
+
+</nav>

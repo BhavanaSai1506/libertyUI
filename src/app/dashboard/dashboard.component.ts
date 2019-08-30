@@ -15,6 +15,7 @@ export class DashboardComponent implements OnInit {
   BarChart:any=[];
   tableDetail;
   jsonData;
+  fullData:any;
 
 
   constructor(public dataService:DataService) { }
@@ -155,6 +156,12 @@ export class DashboardComponent implements OnInit {
       this.jsonData = data;
       this.tableDetail=this.jsonData.tableDetails;
     })
+
+    this.dataService.getData1().subscribe(data=>{
+      this.fullData=data;
+    })
   }
+
+
 
 }

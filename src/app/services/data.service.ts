@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -11,5 +12,13 @@ export class DataService {
 
   getData(){
     return this.http.get("../assets/data/data.json");
+  }
+
+  getData1(){
+    return this.http.get(environment.getData1,{
+      headers:new HttpHeaders({
+        "Content-Type": "application/json"
+      })
+    })
   }
 }

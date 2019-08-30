@@ -6,6 +6,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 const routes: Routes = [
+  {path:'',redirectTo:"dashboard", pathMatch : 'full'},
   {
     path:"dashboard",
     component:DashboardComponent
